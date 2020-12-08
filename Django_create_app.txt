@@ -1,0 +1,20 @@
+create app
+
+1. py manage.py startapp <appName>
+
+2. Update the settings to have your app name under installed apps key
+INSTALLED_APPS
+
+3. Go to/create urls.py in newly created app and defined the patterns.
+from django.urls import path
+
+from . import views
+
+urlpatterns = [
+	path("", views.index, name="index")
+]
+
+4 Now to go to views.py to define your views for further implementaion.
+
+
+

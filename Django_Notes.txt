@@ -1,0 +1,65 @@
+passing to variable to Html using django
+
+it uses templating language
+
+{{ }} => value of the varaible in html for varialbe interpolation provided by django
+
+{% %} => for logic defination
+
+##hello is a directory names under templates 
+
+return render(request,"hello/greet.html",{
+        "name": name.capitalize()
+    })
+
+urls.py => what action to do when url clikced
+views.py => what the response to sent
+templates => provide html templating for input/output variable name
+
+templates has lots of featueres such as:
+
+django uses static pages for html for style sheet like css files. 
+
+How to add static file
+create a new folder called, static that will contain all the static files.
+
+template inheritance
+
+inherit from layout all of the structure and write the different between pages. 
+
+define the block body clause and 
+extends in required html page.
+
+{% extends "tasks/layout.html" %}
+
+{% block body %}
+
+<h1>Add Task </h1>
+<form>
+<input type=text name=task>
+<input type=submit>
+</form>
+
+{% endblock %}
+
+***names collison**
+same name appear to project
+
+to avoid provide app_name
+
+****CSRF => Cross Security Request Forgery***
+Forms not vulnerable to security forgery by another website
+
+django has csrf by default turned on.CsrfViewMiddleware is responsible for setting validation to add some sort of token
+
+**Django has created many forms and validation data**
+{{ form}} =>it will generate the necessory form field
+
+***Imp**
+bydefault django stores sessions data inside of the table: no such table: django_session
+
+how to create this table:
+python manage.py migrate => it will allow the default database tables in django which will be ceated by this command.
+
+
+

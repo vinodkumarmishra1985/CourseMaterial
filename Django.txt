@@ -1,0 +1,93 @@
+python - get the programming feature
+
+Django - > python web framework
+
+Allow to dynamically generate html and css.
+
+HTML+CSS => Static Page
+
+Web Applications
+
+create a webserver via django.
+
+HTTP => Protocol for sending features from to-and fro using internet
+
+GET => Request Method
+
+Get /HTTP/1.1
+Host: www.example.com
+
+Response
+HTTP/1.1 200 OK
+Content-Type: text/html
+
+HTTP Status Code:
+200 => OK
+301 = Moved Permanently
+403 => Forbidden => Not supposed access
+404 => not found
+500 => Internal server error
+
+pip => python pac
+
+https://docs.djangoproject.com/en/3.1/howto/windows/
+pip3 install Django -Linux
+
+**
+py -m venv project-name #Create virtual environment
+
+This will create a folder called ‘project-name’ if it does not already exist and setup the virtual environment. To activate the environment, run:
+...\> project-name\Scripts\activate.bat
+
+Install Django
+...\> py -m pip install Django
+
+django-admin --version # Test
+
+
+
+django-admin startproject 
+
+1. manage.py => manage the code
+2 .settings.py => comes with pre-loaded files
+3. urls.py => table of contents on my webapplication alternatively vist
+
+
+(PythonWebTest) C:\Users\sangita\Desktop\PythonWebTest\Scripts\lecture3>py manage.py runserver
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 18 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+October 23, 2020 - 22:11:04
+Django version 3.1.2, using settings 'lecture3.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+
+
+***Imp
+
+django project consist of multiple services/apps.
+
+1. create django project
+django-admin startproject <project_name>
+2. create django app
+django-admin startapp <appName>
+3. Define the appName in project settings.py
+4. Define the urls.py in project 
+Add include in the improt as below.
+from django.urls import include,path
+and call the functions as below.
+    path('flights/', include("flights.urls")),
+5. create urls.py in appname
+6. define views.py in appname for request and response
+7. create templates directory inside the appname and appName inside the templates
+mkdir templates
+cd templates
+mkdir appNamedir
+cd appNamdir
+notepad layout.html
+
+

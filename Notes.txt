@@ -1,0 +1,76 @@
+int
+float
+str
+True/False
+None => absence of varaible
+
+input => takes the input from user.
+It always gives you string.
+
++ => add 2 numbers
++ => combine/concatenate 2 strings
+
+In python Indentation is required 
+because it knows which statement is inside or outside of the condition
+
+elif => shortcut for elseif in pyton
+
+**Imp
+TypeError => means python is not accepting 1 format the value with different
+NameError => means file/function is not defined
+
+#powerful feature
+
+
+sequenence => like array
+
+sequence of any type of data can be stored in list in python
+
+tupple => value if going to change. 
+e.g. Graphing in 2 dimension to represent the value x and y
+
+Data structures.
+
+list => sequence. It is denoted by []. It is muttable. append to last and remove are functions
+tuple -> sequence of immuatable values. It is denoated by ()
+set - collection of uniq values. No particular order. Every value appears exact ones . s = set() #emmpty set
+dict -> collection of key-value pairs. Physical dictionariy of work and defination.
+
+e.g of dict
+houses={"Harry":"Gryffindor", "Vinod":"NC"}
+
+print (houses["Harry"])
+
+
+****************
+function keyword is def like define
+
+*****import files from other functions
+import command
+import functions
+
+for i in range(10):
+    print (f"The square of {i} is {functions.square(i)}")
+
+
+
+**********************************
+object oriented programming
+
+object -> stored the data and perform and oprate actions on these objects
+
+class is type of template for object
+
+def__init__ => automatically called when it try to create a class object
+
+it takes multiple of parameter
+1. self => references the object we are currently dealing with
+2. and other names input parameter
+
+
+*****
+decortors => is a function and return a modified functions
+
+a function can be passed as input to other function and get an output from a function.
+
+It is very powerful functions.

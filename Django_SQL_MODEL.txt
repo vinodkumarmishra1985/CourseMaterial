@@ -1,0 +1,53 @@
+SQL, MODELS and Migrations
+
+Data 
+origin -> destination -> duration
+
+mysql and postgres => large dbms system
+
+SQLite => all data in single file
+
+SQLite is django default.
+
+
+SQLite data types
+Text => City name
+Numeric => number like data, boolean, date etc
+Integer => +ve, 0, -ve
+REAL => decimal
+BLOB => any type of binary data 0/1, audio file, images etc
+
+MYSQL datatypes
+
+char(size) => if you knwo the fixed length
+varchar(size) => variable char upto mmin to max
+Smallint
+int
+bigint ==> all above integer sizes uses different byte size data
+FLOAT  => floating point number 
+DOUBLE => more bytes of memory to store the information
+
+create table flights (
+id integer primary_key Autoincrement,
+origin text not null,
+destination text not null,
+duration integer not null
+);
+
+constraints (validation mode)
+check => range
+default
+not null
+primary key
+unique => same value don't appera 2 times
+
+insert into flights
+(origin,destination,duration)
+values
+("New York","London",415);
+
+select * from flights;
+select origin,destination from flights;
+select * from flights where id = 3;
+select * from flights where origin = 'New York';
+(
