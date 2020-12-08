@@ -1,0 +1,69 @@
+User Interfaces:
+
+Single Page Applications - Entire page is only 1 page
+
+javascript will play important role and it updates the DOM
+
+
+history.pushState(section: section),"", `section${section}`
+
+window.onpopstate => function (event) {
+console.log(event.state.section);
+showSection(event.state.section);
+}
+
+window properties.
+
+window.innerWidth
+
+window.innerHeight
+
+
+document => all content of a page
+window.scrollY
+window.scrollX
+
+
+document.body.offsetHight
+
+#event function is javascript function for any event clicked on a page.
+document.addEventListener('click', event => {
+	const element = event.target; //what clikced on page is stored in target 
+	if (element.className === 'hide') { // hide button clicked on a page
+		element.remove(); //remove that element which clikced in this case it is hide button will removed.it will remove child
+		element.parentElement.remove(); //This will remove the parent element
+		//element.parentElement.style.animationPlayState = 'running'
+	}
+	
+}); 
+
+opacity: 1 // opacity is css propertiy with value 1 or 0
+animationend (description: when animation end)
+
+javascript framework: 
+
+React is a javascript libarary is enable to design the page based on some underlying state.
+It is declarative programming. 
+
+Imperative programming => tell the computer what to do. update teh counter from 1 to 10 => 
+view <h1>0</h1>
+logic: let num = parseInt(document.querySelctor('h1').innerHTML;
+num += 1;
+document.querySelctor('h1').innerHTML = num;
+
+Declartive programming => describe what is is going to be value
+view : <h1>{num}</h1>
+Logic: num +=1 # since we have declared the value of num in h1 tag, reactive will effectively the value of num
+
+It helps to divide the application into component based on some underlying steps/varialbes.
+React will handle the process for us.
+
+Include these 3 javascript pages
+1. React2
+2. ReactDom (take the react component and insert into DOM)
+3. Babel (package in order to trasnalate code from 1 lang to another. We dont write javascriptt we write extenstion jsx)
+babel is convert jsx code to javascript for browser to understand.
+
+every react is designed into classes.
+
+this.prpos.<varialbes> => will give react varialbe name
