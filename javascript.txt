@@ -1,0 +1,109 @@
+javascript is event driven programmig.
+
+click on button
+
+***
+let => declare varialble.
+
+If varialbe value is not going to change, define with const.
+
+javascript allows to manipulate the DOM. 
+
+document.querySelector("<tagName>").innerHTML = "replaced string"
+document.querySelector("<tagName>") #look for tag
+document.querySelector("#id") # look for id
+document.querySelector(".class") #look for class
+
+querySelector => find the first occurance of given tag name and replace with given string using innerHtml properties.
+
+*** === (triple equal sign uses for equality). Strict equality. not just property even though property as welll.
+== (2 equal sign generally comes true)
+
+
+java uses `` (backtick) for varaible manipulation in alert function with ${VAR_NAME}
+alert(`weleceome ${vAR_NAME}`)
+
+***
+document.addEventlister => 2 arguements (event and functions with no name)
+1. DOMContentLoaded
+2. write a function
+
+document.addEventListner(DOMContentLoaded, function() {
+
+});
+
+document.querySelector('#id').style.color = "red" //style color properties update..
+
+data attribute starts with data followed by any name
+data-color = "red" => 
+
+document.querySelectorAll('button') => returns all the array of pattern matches. all button in an array
+
+document.querySelectorAll('button').forEach(function(button)) {
+	button.onclick = function() {
+		document.querySelector('#hello').style.color = button.dataset.color // takes the button html element and access its dataset data properties.
+	}
+}
+
+=> format**
+document.querySelectorAll('button').forEach(function(button)) {
+	button.onclick = () => {
+		document.querySelector('#hello').style.color = button.dataset.color // takes the button html element and access its dataset data properties.
+	}
+}
+
+*****: event action "onchange" applies to select box.
+
+Events
+onclick
+onmouseover
+onkeydown
+onkeyup
+onload
+..many more
+
+***
+const li = document.createElement('li')
+li.innerHTML = task
+document.querySelector('#tasks').append(li)
+
+return false => stop submitting the form
+
+document.querySelector('#submit').disabled = true => disabling the submit button
+
+document.querySelector('#task').onkeyup = () => {
+	document.querySelector('#submit').disabled = false;
+}
+
+document.querySelector('#task').value.length 
+
+**
+setInterval(count,1000); # particular count function will run in every 1000 millisecond
+
+**local storage => store user information in users browser
+localStorage.getItem(key)
+localStorage.setItem(key,value)
+
+
+javascript object - is python dictionary
+
+let person = {first:'vinod', last:'mishra'}
+
+undefined
+
+person.first
+
+"vinod"
+
+**************************
+API => Application programming Interface
+
+json = Javascipt object Notation
+
+ajax = asynchronys javascript
+
+
+
+
+
+
