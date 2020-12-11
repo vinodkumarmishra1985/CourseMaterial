@@ -1,0 +1,59 @@
+assert => something should be true
+
+if something is not true, throw an error
+
+TDD => Test Driven Development
+
+unittest liberary => it is available in python build with automated error runner.
+
+django test.py setup function will tell django for setup related to test. in short define the dummy data for testing
+
+assertTrue
+assertFalse
+assertEqual
+
+python manage.py test  => it just going to run the test file
+
+django provides the simulate request and response for web pages
+
+c = Client()
+response = c.get("/flights")
+self.assertEqual(response.status_code, 200)
+self.assertEqual(response.context["flights"].count(),3)
+
+**Web page simulation
+
+most popular framework for browser testing
+selenium
+
+simulate the web browser 
+
+webdriver.Chrome()
+
+python -m pip install -U selenium => installing package on windows.
+
+unittest methods
+
+assertEqual
+assertNotEqual
+assertIn
+assertNotIn
+assertFalse
+assertTrue
+
+*******************
+CI/CD => Continuous Integration/Continuous Delivery
+
+How the code integrated across multiple teams and deliver to users
+
+*CI
+Frequent merges to main branch
+Automated unit testing
+
+CD
+Short release schdules
+
+what tools allowed for ease help CI and CD
+1.GitHub Actions => someone to push to repository i want to make some actions automatically checked 
+Test our code anytime any one pushes to the code
+
